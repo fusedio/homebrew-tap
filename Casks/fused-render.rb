@@ -1,6 +1,6 @@
 cask "fused-render" do
-  version "0.2.8"
-  sha256 "64f6884d480564bf39dca299c04a0d82fe2248f485c1e24232203472d45e4583"
+  version "0.2.9"
+  sha256 "51fad5fd75a369dd2a7f52e01d519bbcd7d633031c0bc849e11322bdbad70d2a"
 
   url "https://fused-magic.s3.us-west-2.amazonaws.com/fused-render-dmgs/FusedRender-#{version}.dmg",
       verified: "fused-magic.s3.us-west-2.amazonaws.com/fused-render-dmgs/"
