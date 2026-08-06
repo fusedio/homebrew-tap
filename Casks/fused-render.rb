@@ -15,4 +15,6 @@ cask "fused-render" do
   depends_on macos: :big_sur
 
   app "FusedRender.app"
+
+  uninstall quit: "io.fused.render"
 end
