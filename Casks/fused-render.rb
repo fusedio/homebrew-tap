@@ -15,4 +15,18 @@ cask "fused-render" do
   depends_on macos: :big_sur
 
   app "FusedRender.app"
+
+  preflight do
+    was_running = system("/usr/bin/pgrep", "-xq", "FusedRender")
+    FileUtils.touch("#{staged_path}/.was_running") if was_running
+  end
+
+  postflight do
+    if File.exist?("#{staged_path}/.was_running")
+      system_command "/usr/bin/open", args: ["-a", "#{appdir}/FusedRender.app"]
+      FileUtils.rm("#{staged_path}/.was_running")
+    end
+  end
+
+  uninstall quit: "io.fused.render"
 end
