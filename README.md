@@ -17,7 +17,7 @@ Or tap once, then install and upgrade like any cask:
 ```
 brew tap fusedio/tap
 brew install --cask fused-render
-brew upgrade --cask fused-render
+brew update && brew upgrade --cask fused-render
 ```
 
 In a `brew bundle` `Brewfile`:
@@ -32,6 +32,12 @@ Python, the `fused` CLI, and rclone — no other dependencies. Versions are
 published automatically by the
 [fused-render release pipeline](https://github.com/fusedio/fused-render);
 each release's DMG is built, signed, and notarized before the cask is bumped.
+
+Run `brew update` before `brew upgrade --cask fused-render`. This cask has no
+`livecheck` (its DMGs live in a private bucket), and Homebrew reads casks from
+its local clone of this tap — without `brew update` first, Homebrew won't see
+a version bump merged here and `brew upgrade` will report you're already
+up to date even when a newer release exists.
 
 ## Documentation
 
