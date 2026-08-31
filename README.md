@@ -33,11 +33,11 @@ published automatically by the
 [fused-render release pipeline](https://github.com/fusedio/fused-render);
 each release's DMG is built, signed, and notarized before the cask is bumped.
 
-Run `brew update` before `brew upgrade --cask fused-render`. This cask has no
-`livecheck` (its DMGs live in a private bucket), and Homebrew reads casks from
-its local clone of this tap — without `brew update` first, Homebrew won't see
-a version bump merged here and `brew upgrade` will report you're already
-up to date even when a newer release exists.
+Run `brew update` before `brew upgrade --cask fused-render`. `brew
+upgrade`/`brew outdated` only ever check the cask definition in Homebrew's
+local clone of this tap, not GitHub directly — without `brew update` first,
+Homebrew won't see a version bump merged here and `brew upgrade` will report
+you're already up to date even when a newer release exists.
 
 ## Documentation
 
