@@ -1,6 +1,6 @@
 cask "fused-render" do
-  version "0.5.15"
-  sha256 "ba026367aad032911b579e6e4d6aece277108024fce5230507e7520cc1cc6c54"
+  version "0.5.16"
+  sha256 "c4f357f84b93a981aeca2c36aaf028967cdf25685ab59dd406292544fd4c975e"
 
   url "https://d2ic19jpchjovp.cloudfront.net/fused-render-dmgs/FusedRender-#{version}.dmg",
       verified: "d2ic19jpchjovp.cloudfront.net/fused-render-dmgs/"
