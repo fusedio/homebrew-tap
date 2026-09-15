@@ -1,6 +1,6 @@
 cask "fused-render-lite" do
-  version "0.8.5"
-  sha256 "7ef99e1bed66c29d63c4132f12619bdd04384e6485e2f94115a44837aceb03a8"
+  version "0.8.6"
+  sha256 "cbe846c8181a32cb04edee3fdd28553f817df2e6c9683dff9264730f1173bbeb"
 
   url "https://github.com/fusedio/fused-render-lite/releases/download/v#{version}/RenderLite-#{version}.dmg"
   name "Fused Render Lite"
