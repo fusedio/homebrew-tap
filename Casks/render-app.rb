@@ -2,10 +2,10 @@ cask "render-app" do
   version "0.8.7"
   sha256 "1518f005443c1f624c196b81353588c156ddbf10b78f6cad2fb365eb022aa6a4"
 
-  url "https://github.com/fusedio/fused-render-app/releases/download/v#{version}/RenderApp-#{version}.dmg"
-  name "Fused Render App"
+  url "https://github.com/fusedio/fused-render-lite/releases/download/v#{version}/RenderApp-#{version}.dmg"
+  name "Render App"
   desc "Lightweight runtime for .fused apps: Python-powered interactive HTML views"
-  homepage "https://github.com/fusedio/fused-render-app"
+  homepage "https://github.com/fusedio/fused-render-lite"
 
   livecheck do
     url :url
