@@ -1,4 +1,4 @@
-cask "fused-render-app" do
+cask "render-app" do
   version "0.8.7"
   sha256 "1518f005443c1f624c196b81353588c156ddbf10b78f6cad2fb365eb022aa6a4"
 
