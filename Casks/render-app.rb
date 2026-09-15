@@ -1,6 +1,6 @@
 cask "render-app" do
-  version "0.8.8"
-  sha256 "6e3650600270f0bf0f77666802d6b3d78d6bbc68e4ce7a8d1b8e8c510eca7583"
+  version "0.8.9"
+  sha256 "793c275fb0c1050405321657a5c465360008b828c49cfde1038187815f47c661"
 
   url "https://github.com/fusedio/fused-render-lite/releases/download/v#{version}/RenderApp-#{version}.dmg"
   name "Render App"
