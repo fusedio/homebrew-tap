@@ -39,36 +39,37 @@ local clone of this tap, not GitHub directly — without `brew update` first,
 Homebrew won't see a version bump merged here and `brew upgrade` will report
 you're already up to date even when a newer release exists.
 
-## Fused Render Lite
+## Render App
 
 A ~40 MB runtime for `.fused` apps — opens a `.fused` bundle in its own
 window, runs the app's Python in a per-app `uv` venv, and ships as a signed +
 notarized macOS app.
 
 ```
-brew install --cask fusedio/tap/fused-render-lite
+brew install --cask fusedio/tap/render-app
 ```
 
 Or tap once, then install and upgrade like any cask:
 
 ```
 brew tap fusedio/tap
-brew install --cask fused-render-lite
-brew update && brew upgrade --cask fused-render-lite
+brew install --cask render-app
+brew update && brew upgrade --cask render-app
 ```
 
 In a `brew bundle` `Brewfile`:
 
 ```ruby
 tap "fusedio/tap"
-cask "fused-render-lite"
+cask "render-app"
 ```
 
-The cask installs `RenderLite.app` (macOS 12+). Versions are published
+The cask installs `RenderApp.app` (macOS 12+). Versions are published
 automatically by the
 [fused-render-lite release pipeline](https://github.com/fusedio/fused-render-lite);
-each release's DMG is built, signed, and notarized before the cask is bumped.
-The same `brew update`-before-`brew upgrade` note above applies.
+each release's DMG is built, signed, notarized and uploaded to the same
+CloudFront CDN as Fused Render (under `render-app-dmgs/`) before the cask is
+bumped. The same `brew update`-before-`brew upgrade` note above applies.
 
 ## Documentation
 
