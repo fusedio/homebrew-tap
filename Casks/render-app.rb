@@ -1,6 +1,6 @@
 cask "render-app" do
   version "0.10.2"
-  sha256 "21dbbfd6c23f850f04d35d29b873e8b069c14ebcbf75bd43ae466bbdd7629273"
+  sha256 "af56e8542b9528dd06d7b0eb4ec789688b83c4a5d04793d3163603adaeb7a5e4"
 
   url "https://d2ic19jpchjovp.cloudfront.net/render-app-dmgs/RenderApp-#{version}.dmg",
       verified: "d2ic19jpchjovp.cloudfront.net/render-app-dmgs/"
