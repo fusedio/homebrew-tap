@@ -1,6 +1,6 @@
 cask "fused-render" do
-  version "0.7.38"
-  sha256 "1c90c9208c2350c185a2c3d1fe80b89fa3611d2935f1215a6a28435148d31215"
+  version "0.7.40"
+  sha256 "30cc5faf6a2684e88645c214e03da44526dfe90e5e2e2dfdbacad17a8827bd79"
 
   url "https://d2ic19jpchjovp.cloudfront.net/fused-render-dmgs/FusedRender-#{version}.dmg"
   name "Fused Render"
@@ -13,7 +13,7 @@ cask "fused-render" do
 
   depends_on macos: :big_sur
 
-  app "FusedRender.app"
+  app "Fused Render.app"
 
   uninstall quit: "io.fused.render"
 end
